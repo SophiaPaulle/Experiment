@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+
+using namespace std;
+
+int main() 
+{
+	double box, side, prm, gen;
+
+	cout << "Prices for Tickets" << endl;
+	cout << "Gen Admission: $25" << endl;
+	cout << "Premium: $50"       << endl;
+	cout << "Sideline: $100"     << endl;
+	cout << "Box: $250"          << endl << endl;
+	
+    cout << "Fill Out number of tickets sold for Box: ";
+	cin >> box;
+	cout << "Fill Out number of tickets sold for Sideline: ";
+	cin >> side;
+	cout << "Fill Out number of tickets sold for Premium: ";
+	cin >> prm;
+	cout << "Fill Out number of tickets sold for General Admission: ";
+	cin >> gen;
+
+	cout << endl << "Ticket Price Summary : " << endl;
+	cout << "Box: "               << setprecision(2) << fixed << 250*box << endl;
+	cout << "Sideline: "          << setprecision(2) << 100*side << endl;
+	cout << "Premium: "           << setprecision(2) <<50*prm << endl;
+	cout << "General Admission: " <<setprecision(2) << gen*25 << endl;
+	
+	getch();
+	return 0;
+}
