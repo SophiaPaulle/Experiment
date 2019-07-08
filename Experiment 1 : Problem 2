@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+
+
+using namespace std;
+
+int main()
+{
+	double mass, density;
+    
+	cout << "Enter Mass: ";
+	cin >> mass;
+	cout << "Mass = " << mass << "grams" << endl << endl;
+    
+	cout << "Enter Density: ";
+	cin >> density;
+	cout << "Density = " << density << "g/cm^3" << endl << endl;
+	
+    cout << "Object's Capacity = " << setprecision(2) << mass/(4*density) << "cm^3" << endl;
+
+	getch();
+	return 0;
+}
